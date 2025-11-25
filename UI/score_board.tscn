@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://7mx0md22nw5n"]
+[gd_scene load_steps=6 format=3 uid="uid://d2nmg3c65oh1y"]
 
 [ext_resource type="Script" uid="uid://dp7hqln52rm8u" path="res://Scripts/score_board.gd" id="1_bfeqi"]
-[ext_resource type="StyleBox" uid="uid://sgocc277j3yk" path="res://UI/score_board_green.tres" id="1_iani6"]
-[ext_resource type="StyleBox" uid="uid://35gwahmcqqcv" path="res://UI/score_board_red.tres" id="2_kf146"]
+[ext_resource type="StyleBox" uid="uid://c8wie58kxkht2" path="res://UI/score_board_green.tres" id="1_iani6"]
+[ext_resource type="StyleBox" uid="uid://cjoe2vb3r22ht" path="res://UI/score_board_red.tres" id="2_kf146"]
 
 [sub_resource type="FontFile" id="FontFile_275wx"]
 subpixel_positioning = 0

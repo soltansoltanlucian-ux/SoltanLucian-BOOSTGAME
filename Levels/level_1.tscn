@@ -3,11 +3,11 @@
 [ext_resource type="Material" uid="uid://8drumir7urrx" path="res://Materials/m_brown.tres" id="1_lp6uf"]
 [ext_resource type="Material" uid="uid://cpicv60w187ib" path="res://Materials/m_blue.tres" id="2_uyx5h"]
 [ext_resource type="Material" uid="uid://cqaq8w26ltx78" path="res://Materials/m_green.tres" id="3_l2mo3"]
-[ext_resource type="Script" uid="uid://dp4r3ksucbb6p" path="res://Scripts/LandingPad.gd" id="4_x122y"]
+[ext_resource type="Script" path="res://Scripts/LandingPad.gd" id="4_x122y"]
 [ext_resource type="PackedScene" uid="uid://dic5jfwahf0yv" path="res://player.tscn" id="5_a3b1i"]
 [ext_resource type="PackedScene" uid="uid://chu5pm26hd7qq" path="res://game_manager.tscn" id="6_u6kuw"]
 [ext_resource type="PackedScene" uid="uid://db7e4qqolwtx4" path="res://astreoid.tscn" id="7_syvkh"]
-[ext_resource type="PackedScene" uid="uid://x0ti221p4gdv" path="res://UI/score_board.tscn" id="8_oh237"]
+[ext_resource type="PackedScene" uid="uid://d2nmg3c65oh1y" path="res://UI/score_board.tscn" id="8_oh237"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_14uw7"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -97,7 +97,7 @@ transform = Transform3D(0.613321, 0.789834, 0, -0.789834, 0.613321, 0, 0, 0, 1, 
 size = Vector3(2, 5.68951, 5)
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="Floor"]
-transform = Transform3D(-0.802526, -0.596617, 0, 0.596617, -0.802526, 0, 0, 0, 1, -8.58607, 12.7136, 0)
+transform = Transform3D(-0.802526, -0.596617, 0, 0.596617, -0.802526, 0, 0, 0, 1, -7.8460374, 13.363223, 0)
 size = Vector3(2, 5.68951, 5)
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="Floor"]
@@ -140,7 +140,7 @@ material = ExtResource("2_uyx5h")
 script = ExtResource("4_x122y")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.970296, 0.241922, 0, -0.241922, 0.970296, 0, 7, 10)
+transform = Transform3D(1, 0, 0, 0, 0.9702958, 0.24192195, 0, -0.24192195, 0.9702958, 0, 7, 10.931655)
 fov = 60.0
 
 [node name="Player" parent="." instance=ExtResource("5_a3b1i")]
