@@ -45,7 +45,7 @@
 
 # GDScript pentru logica internă
 
-# Figma (design UI)
+# Figma (o interfata)
 
 # Resurse grafice pixel-art optimizate
 
@@ -57,6 +57,4 @@
 
 # Stare curentă
 
-# Jocul se află într-o versiune stabilă, complet funcțională, cu posibilitatea de extindere ulterioară prin:adăugarea de noi niveluri,
-
-# îmbunătățirea sistemului audio,extinderea UI-ului,optimizarea gameplay-ului.
+# Jocul se află într-o versiune stabilă, complet funcțională, cu posibilitatea de extindere ulterioară prin:adăugarea de noi niveluri,îmbunătățirea sistemului audio,extinderea UI-ului,optimizarea gameplay-ului.
