@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://ddpf2ydqc31sa"]
 
-[ext_resource type="Texture2D" uid="uid://rw1ux2xu12e0" path="res://UI/unnamed.png" id="1_p8ccj"]
+[ext_resource type="Texture2D" uid="uid://rw1ux2xu12e0" path="res://UI/ImageINterface.png" id="1_p8ccj"]
 [ext_resource type="Script" uid="uid://cmxyoiyfue6iy" path="res://UI/main_menu.gd" id="1_tk8dj"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tk8dj"]
@@ -172,4 +172,6 @@ theme_override_constants/shadow_offset_y = 3
 theme_override_font_sizes/font_size = 100
 text = "Rocket Game"
 
+[connection signal="pressed" from="VBoxContainer/Start Game" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/Controls" to="." method="_on_controls_pressed"]
 [connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

@@ -19,8 +19,8 @@ func _on_button_pressed() -> void:
 	)
 
 func _on_button_2_pressed() -> void:
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://UI/level_select.tscn.tscn")
 	
 	
-
-
+	
+	

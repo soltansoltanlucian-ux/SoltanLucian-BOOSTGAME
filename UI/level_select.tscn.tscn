@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://scivu6epvp4y"]
+[gd_scene load_steps=6 format=3 uid="uid://scivu6epvp4y"]
 
-[ext_resource type="Texture2D" uid="uid://rw1ux2xu12e0" path="res://UI/unnamed.png" id="1_ffrn0"]
+[ext_resource type="Script" uid="uid://blnxa4mu51qom" path="res://UI/level_select.tscn.gd" id="1_61ju5"]
+[ext_resource type="Texture2D" uid="uid://rw1ux2xu12e0" path="res://UI/ImageINterface.png" id="1_ffrn0"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_61ju5"]
 texture = ExtResource("1_ffrn0")
@@ -28,6 +29,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_61ju5")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -38,7 +40,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_61ju5")
 
-[node name="Button" type="Button" parent="Panel"]
+[node name="Button1" type="Button" parent="Panel"]
 modulate = Color(0.68307734, 0.6830774, 0.68307734, 1)
 self_modulate = Color(0.8217887, 0.82178867, 0.82178867, 1)
 layout_mode = 1
@@ -53,21 +55,6 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 26
 theme_override_styles/normal = SubResource("StyleBoxFlat_jcxcg")
 text = "Level 1"
-metadata/_edit_group_ = true
-
-[node name="Button5" type="Button" parent="Panel"]
-layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = 936.0
-offset_top = 102.0
-offset_right = 1100.1826
-offset_bottom = 260.0
-grow_vertical = 2
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("StyleBoxFlat_a8ipw")
-text = "Back to Menu"
 metadata/_edit_group_ = true
 
 [node name="Button2" type="Button" parent="Panel"]
@@ -120,3 +107,24 @@ theme_override_font_sizes/font_size = 26
 theme_override_styles/normal = SubResource("StyleBoxFlat_jcxcg")
 text = "Level 4"
 metadata/_edit_group_ = true
+
+[node name="Button5" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 936.0
+offset_top = 102.0
+offset_right = 1100.1826
+offset_bottom = 260.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_a8ipw")
+text = "Back to Menu"
+metadata/_edit_group_ = true
+
+[connection signal="pressed" from="Panel/Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Panel/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Panel/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Panel/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Panel/Button5" to="." method="_on_button_5_pressed"]
