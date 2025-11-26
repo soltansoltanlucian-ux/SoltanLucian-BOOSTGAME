@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpv5134svpu2r"]
+
+[ext_resource type="AudioStream" uid="uid://by0tpkibpuohe" path="res://Sounds/Sakura-Girl-Yay-chosic.com_.mp3" id="1_prku1"]
+
+[node name="Music" type="Node"]
+
+[node name="MusicPlayer" type="Node" parent="."]
+
+[node name="SakuraGirlYayChosic_com" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(372, 217)
+stream = ExtResource("1_prku1")
+autoplay = true

@@ -20,7 +20,7 @@ config/windows_native_icon="res://Icon-ICO.ico"
 
 [autoload]
 
-MusicPlayer="*res://Sounds/MusicPlayer.tscn"
+Music="*res://Sounds/music.tscn"
 
 [input]
 
