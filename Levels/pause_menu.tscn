@@ -1,0 +1,73 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4jkkvxc651ou"]
+
+[sub_resource type="GDScript" id="GDScript_dvqi8"]
+script/source = "extends Control
+
+
+func _on_button_pressed() -> void:
+	get_tree().paused = false
+	visible = false
+
+func _on_button_2_pressed():
+	get tree().paused = false
+	get_tree().change_scene_to_file(\"res://UI/main_menu.tscn\")
+"
+
+[node name="Pause Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_dvqi8")
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(1, 1, 1, 0.45882353)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -168.75
+offset_top = -86.5
+offset_right = 168.75
+offset_bottom = 86.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(50, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 31
+text = "Resume"
+expand_icon = true
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(50, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 31
+text = "Main Menu"
+expand_icon = true
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(50, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 31
+text = "Select Level"
+expand_icon = true
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
